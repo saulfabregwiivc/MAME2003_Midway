@@ -820,7 +820,7 @@ skipdma:
 	/* used to initiate the DMA. What they do is start the DMA, *then* set */
 	/* up the memory for it, which means that there must be some non-zero  */
 	/* delay that gives them enough time to build up the DMA command list  */
- if (options.activate_dcs_speedhack)
+ if (activate_dcs_speedhack)
  {
       if (command != 0x8000)
       dma_callback(1);
